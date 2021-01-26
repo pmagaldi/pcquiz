@@ -1,0 +1,54 @@
+{
+    "bg": "https://i.pinimg.com/originals/92/f8/5a/92f85a40db5c0b6f9117768ce05d7ea7.jpg",
+    "title": "Quiz Sobre Computadores Do PMagaldi",
+    "description": "Teste os seus conhecimentos sobre Computadores e vamos ver quantas peças você vai deixar de quebrar",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#42C920",
+        "secondary": "#3d5afe",
+        "mainBg": "#111217",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    },
+    "themeHalloween": {
+        "colors": {
+          "primary": "#673ab7",
+          "secondary": "#ef6c00",
+          "mainBg": "#111217",
+          "contrastText": "#FFFFFF",
+          "wrong": "#FF5722",
+          "success": "#4CAF50"
+        },
+        "borderRadius": "4px"
+    }
+  }
