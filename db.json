@@ -53,6 +53,6 @@
     },
     "og":{
       "url": "https://teste.com.br",
-      "type": "website",
+      "type": "website"
     }
   }
