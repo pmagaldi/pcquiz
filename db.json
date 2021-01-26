@@ -1,6 +1,6 @@
 {
     "bg": "https://i.pinimg.com/originals/92/f8/5a/92f85a40db5c0b6f9117768ce05d7ea7.jpg",
-    "title": "Quiz Sobre Computadores Do PMagaldi",
+    "title": "Quiz Sobre Computadores",
     "description": "Teste os seus conhecimentos sobre Computadores e vamos ver quantas peças você vai deixar de quebrar",
     "questions": [
       {
@@ -50,5 +50,9 @@
           "success": "#4CAF50"
         },
         "borderRadius": "4px"
+    },
+    "og":{
+      "url": "https://teste.com.br",
+      "type": "website",
     }
   }

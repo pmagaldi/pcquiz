@@ -24,11 +24,10 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
   }
 `
+//tentativa do desafio do tema halloween, o problema que ele só coloca o tema via compilação =/
 const Hoje = new Date();
-//const Halloween = Hoje.toGMTString().include('31 oct');
-console.log(Hoje);
-//console.log(Halloween);
-const theme =  db.theme;
+const Halloween = new Date(Hoje.getFullYear(),9,31);
+const theme = Hoje.getDate() === Halloween.getDate() ? db.themeHalloween : db.theme;
 
 export default function App({ Component, pageProps }) {
   return (

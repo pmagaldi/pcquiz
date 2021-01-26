@@ -5,6 +5,7 @@ import QuizLogo from '../src/components/QuizLogo'
 import QuizBackground from '../src/components/QuizBackground'
 import Footer from '../src/components/Footer'
 import GitHubCorner from '../src/components/GitHubCorner'
+import Head from 'next/head'
 
 export const QuizContainer = styled.div`
   width:100%;
@@ -19,7 +20,22 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <>
+    <div>
+      <Head>
+        <title>{db.title}</title>
+        <meta charSet="utf-8"/>
+        <meta property='title' content={db.title}/>
+        <meta property='description' content={db.description}/>
+        <meta property='og:type' content={db.og.type}/>
+        <meta property='og:url' content={db.og.url}/>
+        <meta property='og:image' content={db.bg}/>
+        <meta property='og:title' content={db.title}/>
+        <meta property='og:description' content={db.description}/>
+      </Head>
+    </div>
+    <div>
+      <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -46,5 +62,7 @@ export default function Home() {
       </QuizContainer>
       <GitHubCorner projectUrl='https://github.com/pmagaldi' />
     </QuizBackground>
+    </div>
+    </>
   )
 }
