@@ -32,7 +32,7 @@ export default function Home() {
                 infoEvent.preventDefault();
                 router.push({
                   pathname: '/quiz',
-                  query: { text: name },
+                  query: { nome: name },
                 });
               }}
               >

@@ -14,7 +14,7 @@ export default function QuizPage() {
         <QuizContainer>
           <Widget>
             <Widget.Header>
-              <h1>{router.query.text}</h1>
+              <h1>{router.query.nome}</h1>
             </Widget.Header>
             <img src={db.questions[0].image} alt="Imagem da Questão" />
             <Widget.Content>
