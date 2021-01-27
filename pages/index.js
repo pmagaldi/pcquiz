@@ -9,6 +9,7 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizContainer from '../src/components/QuizContainer';
+import Input from '../src/components/Input';
 
 export default function Home() {
   const router = useRouter();
@@ -36,7 +37,7 @@ export default function Home() {
                 });
               }}
               >
-                <input
+                <Input
                   onChange={function (infoEvent) {
                     setName(infoEvent.target.value);
                   }}

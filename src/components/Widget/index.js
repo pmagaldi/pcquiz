@@ -51,20 +51,6 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
-  }  
-  input {    
-    font-weight: normal;
-    font-style: normal;
-    width: 281px;
-    height: 38px;
-    top: 1px;
-    left: 1px;
-    padding: 15px;
-    border-radius: 3.5px;
-    border-color: ${({ theme }) => theme.colors.secondary};
-    background-color: ${({ theme }) => theme.colors.mainBg};
-    color: ${({ theme }) => theme.colors.contrastText};
-    margin-bottom: 25px;
   }
   button {
     font-weight: bold;
