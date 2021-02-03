@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const InputBase = styled.input`
     width: 100%;
@@ -12,10 +14,26 @@ const InputBase = styled.input`
     margin-bottom: 25px;
 `;
 
-export default function Input() {
+export default function Input({ onChange, placeholder, ...props }) {
   return (
     <div>
-      <InputBase />
+      <InputBase
+        onChange={onChange}
+        placeholder={placeholder}
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...props}
+      />
     </div>
   );
 }
+
+Input.defaultProps = {
+  value: '',
+};
+
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+};

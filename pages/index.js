@@ -10,6 +10,7 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizContainer from '../src/components/QuizContainer';
 import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 export default function Home() {
   const router = useRouter();
@@ -29,7 +30,7 @@ export default function Home() {
             </Widget.Header>
             <Widget.Content>
               <p>{db.description}</p>
-              <form onSubmit={function (infoEvent) {
+              <form onSubmit={(infoEvent) => {
                 infoEvent.preventDefault();
                 router.push({
                   pathname: '/quiz',
@@ -38,16 +39,16 @@ export default function Home() {
               }}
               >
                 <Input
-                  onChange={function (infoEvent) {
+                  name="nomeDoUsuario"
+                  onChange={(infoEvent) => {
                     setName(infoEvent.target.value);
                   }}
                   placeholder="Digite Seu Nome"
+                  value={name}
                 />
-                <button type="submit">
-                  Jogar
-                  {' '}
-                  {name}
-                </button>
+                <Button type="submit" disabled={name.length === 0}>
+                  {`Jogar ${name}`}
+                </Button>
               </form>
             </Widget.Content>
           </Widget>
